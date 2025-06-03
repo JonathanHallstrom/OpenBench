@@ -58,6 +58,86 @@
             "both_time_control": "60+0.6",
             "workload_size": 8,
             "test_max_games": 20000
+        },
+
+        "STC ELO-GAIN [SMP 2T]": {
+            "both_options": "Threads=2 Hash=32",
+            "both_time_control": "10+0.1",
+            "workload_size": 32
+        },
+
+        "LTC ELO-GAIN [SMP 2T]": {
+            "both_options": "Threads=2 Hash=256",
+            "both_time_control": "60+0.6",
+            "workload_size": 8
+        },
+
+        "STC ELO-EQUAL [SMP 2T]": {
+            "both_options": "Threads=2 Hash=32",
+            "both_time_control": "10+0.1",
+            "workload_size": 32,
+            "test_bounds": "[-3.00, 1.00]"
+        },
+
+        "LTC ELO-EQUAL [SMP 2T]": {
+            "both_options": "Threads=2 Hash=256",
+            "both_time_control": "60+0.6",
+            "workload_size": 8,
+            "test_bounds": "[-3.00, 1.00]"
+        },
+
+        "STC ELO-PROGRESS [SMP 2T]": {
+            "both_options": "Threads=2 Hash=32",
+            "both_time_control": "10+0.1",
+            "workload_size": 32,
+            "test_max_games": 20000
+        },
+
+        "LTC ELO-PROGRESS [SMP 2T]": {
+            "both_options": "Threads=2 Hash=256",
+            "both_time_control": "60+0.6",
+            "workload_size": 8,
+            "test_max_games": 20000
+        },
+
+        "STC ELO-GAIN [SMP 4T]": {
+            "both_options": "Threads=4 Hash=64",
+            "both_time_control": "10+0.1",
+            "workload_size": 32
+        },
+
+        "LTC ELO-GAIN [SMP 4T]": {
+            "both_options": "Threads=4 Hash=512",
+            "both_time_control": "60+0.6",
+            "workload_size": 8
+        },
+
+        "STC ELO-EQUAL [SMP 4T]": {
+            "both_options": "Threads=4 Hash=64",
+            "both_time_control": "10+0.1",
+            "workload_size": 32,
+            "test_bounds": "[-3.00, 1.00]"
+        },
+
+        "LTC ELO-EQUAL [SMP 4T]": {
+            "both_options": "Threads=4 Hash=512",
+            "both_time_control": "60+0.6",
+            "workload_size": 8,
+            "test_bounds": "[-3.00, 1.00]"
+        },
+
+        "STC ELO-PROGRESS [SMP 4T]": {
+            "both_options": "Threads=4 Hash=64",
+            "both_time_control": "10+0.1",
+            "workload_size": 32,
+            "test_max_games": 20000
+        },
+
+        "LTC ELO-PROGRESS [SMP 4T]": {
+            "both_options": "Threads=4 Hash=512",
+            "both_time_control": "60+0.6",
+            "workload_size": 8,
+            "test_max_games": 20000
         }
     },
 
