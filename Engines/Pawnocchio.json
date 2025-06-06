@@ -14,246 +14,246 @@
         "default": {
             "base_branch": "master",
             "book_name": "UHO_Lichess_4852_v1.epd",
-            "test_bounds": "[0.00, 5.00]",
-            "test_confidence": "[0.05, 0.05]",
+            "test_bounds": "[0.00, 4.00]",
+            "test_confidence": "[0.1, 0.05]",
             "win_adj": "movecount=3 score=400",
             "draw_adj": "movenumber=40 movecount=8 score=10"
         },
 
-        "STC ELO-GAIN": {
+        "STC": {
             "both_options": "Threads=1 Hash=16",
             "both_time_control": "10+0.1",
             "workload_size": 32
         },
 
-        "LTC ELO-GAIN": {
+        "LTC": {
             "both_options": "Threads=1 Hash=128",
-            "both_time_control": "60+0.6",
+            "both_time_control": "40+0.4",
             "workload_size": 8
         },
 
-        "VLTC ELO-GAIN": {
+        "VLTC": {
             "both_options": "Threads=1 Hash=256",
             "both_time_control": "80+0.8",
             "workload_size": 8
         },
 
-        "VVLTC ELO-GAIN": {
+        "VVLTC": {
             "both_options": "Threads=1 Hash=256",
             "both_time_control": "120+1.2",
             "workload_size": 8
         },
 
-        "STC ELO-EQUAL": {
+        "STC regression": {
             "both_options": "Threads=1 Hash=16",
             "both_time_control": "10+0.1",
             "workload_size": 32,
             "test_bounds": "[-3.00, 1.00]"
         },
 
-        "LTC ELO-EQUAL": {
+        "LTC regression": {
             "both_options": "Threads=1 Hash=128",
-            "both_time_control": "60+0.6",
+            "both_time_control": "40+0.4",
             "workload_size": 8,
             "test_bounds": "[-3.00, 1.00]"
         },
 
-        "VLTC ELO-EQUAL": {
+        "VLTC regression": {
             "both_options": "Threads=1 Hash=256",
             "both_time_control": "80+0.8",
             "workload_size": 8,
             "test_bounds": "[-3.00, 1.00]"
         },
 
-        "VVLTC ELO-EQUAL": {
+        "VVLTC regression": {
             "both_options": "Threads=1 Hash=256",
             "both_time_control": "120+1.2",
             "workload_size": 8,
             "test_bounds": "[-3.00, 1.00]"
         },
 
-        "STC ELO-PROGRESS": {
+        "STC progtest": {
             "both_options": "Threads=1 Hash=16",
             "both_time_control": "10+0.1",
             "workload_size": 32,
             "test_max_games": 20000
         },
 
-        "LTC ELO-PROGRESS": {
+        "LTC progtest": {
             "both_options": "Threads=1 Hash=128",
-            "both_time_control": "60+0.6",
+            "both_time_control": "40+0.4",
             "workload_size": 8,
             "test_max_games": 20000
         },
 
-        "VLTC ELO-PROGRESS": {
+        "VLTC progtest": {
             "both_options": "Threads=1 Hash=256",
             "both_time_control": "80+0.8",
             "workload_size": 8,
             "test_max_games": 20000
         },
 
-        "VVLTC ELO-PROGRESS": {
+        "VVLTC progtest": {
             "both_options": "Threads=1 Hash=256",
             "both_time_control": "120+1.2",
             "workload_size": 8,
             "test_max_games": 20000
         },
 
-        "STC ELO-GAIN [SMP 2T]": {
+        "STC [2T]": {
             "both_options": "Threads=2 Hash=32",
             "both_time_control": "10+0.1",
             "workload_size": 32
         },
 
-        "LTC ELO-GAIN [SMP 2T]": {
+        "LTC [2T]": {
             "both_options": "Threads=2 Hash=256",
-            "both_time_control": "60+0.6",
+            "both_time_control": "40+0.4",
             "workload_size": 8
         },
 
-        "VLTC ELO-GAIN [SMP 2T]": {
+        "VLTC [2T]": {
             "both_options": "Threads=2 Hash=512",
             "both_time_control": "80+0.8",
             "workload_size": 8
         },
 
-        "VVLTC ELO-GAIN [SMP 2T]": {
+        "VVLTC [2T]": {
             "both_options": "Threads=2 Hash=512",
             "both_time_control": "120+1.2",
             "workload_size": 8
         },
 
-        "STC ELO-EQUAL [SMP 2T]": {
+        "STC regression [2T]": {
             "both_options": "Threads=2 Hash=32",
             "both_time_control": "10+0.1",
             "workload_size": 32,
             "test_bounds": "[-3.00, 1.00]"
         },
 
-        "LTC ELO-EQUAL [SMP 2T]": {
+        "LTC regression [2T]": {
             "both_options": "Threads=2 Hash=256",
-            "both_time_control": "60+0.6",
+            "both_time_control": "40+0.4",
             "workload_size": 8,
             "test_bounds": "[-3.00, 1.00]"
         },
 
-        "VLTC ELO-EQUAL [SMP 2T]": {
+        "VLTC regression [2T]": {
             "both_options": "Threads=2 Hash=512",
             "both_time_control": "80+0.8",
             "workload_size": 8,
             "test_bounds": "[-3.00, 1.00]"
         },
 
-        "VVLTC ELO-EQUAL [SMP 2T]": {
+        "VVLTC regression [2T]": {
             "both_options": "Threads=2 Hash=512",
             "both_time_control": "120+1.2",
             "workload_size": 8,
             "test_bounds": "[-3.00, 1.00]"
         },
 
-        "STC ELO-PROGRESS [SMP 2T]": {
+        "STC progtest [2T]": {
             "both_options": "Threads=2 Hash=32",
             "both_time_control": "10+0.1",
             "workload_size": 32,
             "test_max_games": 20000
         },
 
-        "LTC ELO-PROGRESS [SMP 2T]": {
+        "LTC progtest [2T]": {
             "both_options": "Threads=2 Hash=256",
-            "both_time_control": "60+0.6",
+            "both_time_control": "40+0.4",
             "workload_size": 8,
             "test_max_games": 20000
         },
 
-        "VLTC ELO-PROGRESS [SMP 2T]": {
+        "VLTC progtest [2T]": {
             "both_options": "Threads=2 Hash=512",
             "both_time_control": "80+0.8",
             "workload_size": 8,
             "test_max_games": 20000
         },
 
-        "VVLTC ELO-PROGRESS [SMP 2T]": {
+        "VVLTC progtest [2T]": {
             "both_options": "Threads=2 Hash=512",
             "both_time_control": "120+1.2",
             "workload_size": 8,
             "test_max_games": 20000
         },
 
-        "STC ELO-GAIN [SMP 4T]": {
+        "STC [4T]": {
             "both_options": "Threads=4 Hash=64",
             "both_time_control": "10+0.1",
             "workload_size": 32
         },
 
-        "LTC ELO-GAIN [SMP 4T]": {
+        "LTC [4T]": {
             "both_options": "Threads=4 Hash=512",
-            "both_time_control": "60+0.6",
+            "both_time_control": "40+0.4",
             "workload_size": 8
         },
 
-        "VLTC ELO-GAIN [SMP 4T]": {
+        "VLTC [4T]": {
             "both_options": "Threads=4 Hash=1024",
             "both_time_control": "80+0.8",
             "workload_size": 8
         },
 
-        "VVLTC ELO-GAIN [SMP 4T]": {
+        "VVLTC [4T]": {
             "both_options": "Threads=4 Hash=1024",
             "both_time_control": "120+1.2",
             "workload_size": 8
         },
 
-        "STC ELO-EQUAL [SMP 4T]": {
+        "STC regression [4T]": {
             "both_options": "Threads=4 Hash=64",
             "both_time_control": "10+0.1",
             "workload_size": 32,
             "test_bounds": "[-3.00, 1.00]"
         },
 
-        "LTC ELO-EQUAL [SMP 4T]": {
+        "LTC regression [4T]": {
             "both_options": "Threads=4 Hash=512",
-            "both_time_control": "60+0.6",
+            "both_time_control": "40+0.4",
             "workload_size": 8,
             "test_bounds": "[-3.00, 1.00]"
         },
 
-        "VLTC ELO-EQUAL [SMP 4T]": {
+        "VLTC regression [4T]": {
             "both_options": "Threads=4 Hash=1024",
             "both_time_control": "80+0.8",
             "workload_size": 8,
             "test_bounds": "[-3.00, 1.00]"
         },
 
-        "VVLTC ELO-EQUAL [SMP 4T]": {
+        "VVLTC regression [4T]": {
             "both_options": "Threads=4 Hash=1024",
             "both_time_control": "120+1.2",
             "workload_size": 8,
             "test_bounds": "[-3.00, 1.00]"
         },
 
-        "STC ELO-PROGRESS [SMP 4T]": {
+        "STC progtest [4T]": {
             "both_options": "Threads=4 Hash=64",
             "both_time_control": "10+0.1",
             "workload_size": 32,
             "test_max_games": 20000
         },
 
-        "LTC ELO-PROGRESS [SMP 4T]": {
+        "LTC progtest [4T]": {
             "both_options": "Threads=4 Hash=512",
-            "both_time_control": "60+0.6",
+            "both_time_control": "40+0.4",
             "workload_size": 8,
             "test_max_games": 20000
         },
 
-        "VLTC ELO-PROGRESS [SMP 4T]": {
+        "VLTC progtest [4T]": {
             "both_options": "Threads=4 Hash=1024",
             "both_time_control": "80+0.8",
             "workload_size": 8,
             "test_max_games": 20000
         },
 
-        "VVLTC ELO-PROGRESS [SMP 4T]": {
+        "VVLTC progtest [4T]": {
             "both_options": "Threads=4 Hash=1024",
             "both_time_control": "120+1.2",
             "workload_size": 8,
@@ -275,7 +275,7 @@
 
         "MTC": {
             "dev_options": "Threads=1 Hash=64",
-            "dev_time_control": "30+0.3"
+            "dev_time_control": "20+0.2"
         },
 
         "LTC": {
