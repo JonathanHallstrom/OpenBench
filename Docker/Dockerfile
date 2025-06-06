@@ -31,6 +31,17 @@ RUN ln -s /usr/bin/clang-20 /usr/bin/clang && \
 ENV CC=clang
 ENV CXX=clang++
 
+# Set Zig version and Install Path
+ENV ZIG_VERSION=0.14.1
+ENV ZIG_HOME=/opt/zig
+
+# Install Zig
+RUN curl -LO https://ziglang.org/download/${ZIG_VERSION}/zig-x86_64-linux-${ZIG_VERSION}.tar.xz && \
+    tar -xf zig-x86_64-linux-${ZIG_VERSION}.tar.xz && \
+    mv zig-x86_64-linux-${ZIG_VERSION} ${ZIG_HOME} && \
+    ln -s ${ZIG_HOME}/zig /usr/bin/zig && \
+    rm zig-x86_64-linux-${ZIG_VERSION}.tar.xz
+
 # Clone the Verdict Client
 RUN git clone https://github.com/TheBlackPlague/Verdict
 
