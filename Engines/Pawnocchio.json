@@ -1,12 +1,12 @@
 {
-    "source": "https://github.com/TheBlackPlague/StockDory",
+    "source": "https://github.com/JonathanHallstrom/pawnocchio",
     "private": false,
-    "nps": 3200000,
+    "nps": 1000000,
 
     "build": {
         "path": "",
-        "compilers": ["clang>=20.0.0"],
-        "cpuflags": ["POPCNT"],
+        "compilers": ["zig"],
+        "cpuflags": [],
         "systems": ["Linux", "Windows", "Darwin"]
     },
 
@@ -34,6 +34,12 @@
 
         "VLTC ELO-GAIN": {
             "both_options": "Threads=1 Hash=256",
+            "both_time_control": "80+0.8",
+            "workload_size": 8
+        },
+
+        "VVLTC ELO-GAIN": {
+            "both_options": "Threads=1 Hash=256",
             "both_time_control": "120+1.2",
             "workload_size": 8
         },
@@ -53,6 +59,13 @@
         },
 
         "VLTC ELO-EQUAL": {
+            "both_options": "Threads=1 Hash=256",
+            "both_time_control": "80+0.8",
+            "workload_size": 8,
+            "test_bounds": "[-3.00, 1.00]"
+        },
+
+        "VVLTC ELO-EQUAL": {
             "both_options": "Threads=1 Hash=256",
             "both_time_control": "120+1.2",
             "workload_size": 8,
@@ -75,6 +88,13 @@
 
         "VLTC ELO-PROGRESS": {
             "both_options": "Threads=1 Hash=256",
+            "both_time_control": "80+0.8",
+            "workload_size": 8,
+            "test_max_games": 20000
+        },
+
+        "VVLTC ELO-PROGRESS": {
+            "both_options": "Threads=1 Hash=256",
             "both_time_control": "120+1.2",
             "workload_size": 8,
             "test_max_games": 20000
@@ -93,6 +113,12 @@
         },
 
         "VLTC ELO-GAIN [SMP 2T]": {
+            "both_options": "Threads=2 Hash=512",
+            "both_time_control": "80+0.8",
+            "workload_size": 8
+        },
+
+        "VVLTC ELO-GAIN [SMP 2T]": {
             "both_options": "Threads=2 Hash=512",
             "both_time_control": "120+1.2",
             "workload_size": 8
@@ -113,6 +139,13 @@
         },
 
         "VLTC ELO-EQUAL [SMP 2T]": {
+            "both_options": "Threads=2 Hash=512",
+            "both_time_control": "80+0.8",
+            "workload_size": 8,
+            "test_bounds": "[-3.00, 1.00]"
+        },
+
+        "VVLTC ELO-EQUAL [SMP 2T]": {
             "both_options": "Threads=2 Hash=512",
             "both_time_control": "120+1.2",
             "workload_size": 8,
@@ -135,6 +168,13 @@
 
         "VLTC ELO-PROGRESS [SMP 2T]": {
             "both_options": "Threads=2 Hash=512",
+            "both_time_control": "80+0.8",
+            "workload_size": 8,
+            "test_max_games": 20000
+        },
+
+        "VVLTC ELO-PROGRESS [SMP 2T]": {
+            "both_options": "Threads=2 Hash=512",
             "both_time_control": "120+1.2",
             "workload_size": 8,
             "test_max_games": 20000
@@ -153,6 +193,12 @@
         },
 
         "VLTC ELO-GAIN [SMP 4T]": {
+            "both_options": "Threads=4 Hash=1024",
+            "both_time_control": "80+0.8",
+            "workload_size": 8
+        },
+
+        "VVLTC ELO-GAIN [SMP 4T]": {
             "both_options": "Threads=4 Hash=1024",
             "both_time_control": "120+1.2",
             "workload_size": 8
@@ -173,6 +219,13 @@
         },
 
         "VLTC ELO-EQUAL [SMP 4T]": {
+            "both_options": "Threads=4 Hash=1024",
+            "both_time_control": "80+0.8",
+            "workload_size": 8,
+            "test_bounds": "[-3.00, 1.00]"
+        },
+
+        "VVLTC ELO-EQUAL [SMP 4T]": {
             "both_options": "Threads=4 Hash=1024",
             "both_time_control": "120+1.2",
             "workload_size": 8,
@@ -195,13 +248,62 @@
 
         "VLTC ELO-PROGRESS [SMP 4T]": {
             "both_options": "Threads=4 Hash=1024",
+            "both_time_control": "80+0.8",
+            "workload_size": 8,
+            "test_max_games": 20000
+        },
+
+        "VVLTC ELO-PROGRESS [SMP 4T]": {
+            "both_options": "Threads=4 Hash=1024",
             "both_time_control": "120+1.2",
             "workload_size": 8,
             "test_max_games": 20000
         }
     },
 
-    "tune_presets": {},
+    "tune_presets": {
+        "default": {
+            "book_name": "UHO_4060_v2.epd",
+            "win_adj": "movecount=3 score=400",
+            "draw_adj": "movenumber=40 movecount=8 score=10"
+        },
 
-    "datagen_presets": {}
+        "STC": {
+            "dev_options": "Threads=1 Hash=16",
+            "dev_time_control": "10+0.1"
+        },
+
+        "MTC": {
+            "dev_options": "Threads=1 Hash=64",
+            "dev_time_control": "30+0.3"
+        },
+
+        "LTC": {
+            "dev_options": "Threads=1 Hash=128",
+            "dev_time_control": "60+0.0.6"
+        },
+
+        "VLTC": {
+            "dev_options": "Threads=1 Hash=256",
+            "dev_time_control": "80+0.8"
+        },
+
+        "VVLTC": {
+            "dev_options": "Threads=1 Hash=256",
+            "dev_time_control": "120+1.2"
+        }
+    },
+
+    "datagen_presets": {
+        "default": {
+            "win_adj": "None",
+            "draw_adj": "None",
+            "workload_size": 128
+        },
+
+        "40k Nodes": {
+            "both_options": "Threads=1 Hash=16",
+            "both_time_control": "N=40000"
+        }
+    }
 }
