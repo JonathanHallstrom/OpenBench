@@ -1,0 +1,12 @@
+{
+    "source": "https://github.com/mhouppin/stash-bot",
+    "private": false,
+    "nps": 1615000,
+
+    "build": {
+        "path": "src",
+        "compilers": ["clang"],
+        "cpuflags": [],
+        "systems": ["Linux", "Windows", "Darwin"]
+    }
+}
