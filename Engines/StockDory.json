@@ -1,7 +1,7 @@
 {
     "source": "https://github.com/TheBlackPlague/StockDory",
     "private": false,
-    "nps": 3200000,
+    "nps": 2000000,
 
     "build": {
         "path": "",
