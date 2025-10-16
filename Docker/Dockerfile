@@ -32,7 +32,7 @@ ENV CC=clang
 ENV CXX=clang++
 
 # Set Zig version and Install Path
-ENV ZIG_VERSION=0.15.1
+ENV ZIG_VERSION=0.15.2
 ENV ZIG_HOME=/opt/zig
 
 # Install Zig
