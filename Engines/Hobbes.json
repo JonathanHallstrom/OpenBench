@@ -58,7 +58,7 @@
     "datagen_presets" : {
 
         "default" : {
-            "both_options"      : "Threads=1 Hash=8 UseSoftNodes=true",
+            "both_options"      : "Threads=1 Hash=8 UseSoftNodes=true Minimal=true",
             "both_time_control" : "N=5000",
             "datagen_max_games" : 1000000,
             "upload_pgns"       : "COMPACT",
